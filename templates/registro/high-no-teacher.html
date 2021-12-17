@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+<div class="container">
+    <h1>Alta de empleado no docente</h1>
+
+    <form method="post"> {% csrf_token %} {{ form.as_p }}
+        <button class="btn btn-info"type="submit">Alta</button>
+
+    </form>
+</div>
+{% endblock content %}
+    
